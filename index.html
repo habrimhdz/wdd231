@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Page </title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-larger.css">
+    <meta name="description" content="Placeholder Page">
+    <meta name="author" content="Angel Habrim Hernandez Garcia">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <img src="images/x.svg" alt="Logo" width="200" loading="lazy">
+        <h2>Site Name</h2>
+        </div>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+          <nav class="navbar">
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="chamber.html" id="chamber">Chamber Project</a></li>
+                <li><a href="final.html" id="final">Final Project</a></li>
+            </ul>
+        </nav>
+        <h1>Home</h1>
+    </header>
+    <main>
+    <div class="grid">
+        <section class="aboutme">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate error, voluptatibus sapiente praesentium laborum et repellendus dolorem est quasi laudantium amet delectus impedit. Adipisci porro facilis assumenda, voluptatem eveniet molestiae! </p>
+        </section>
+        <section class="studentpic">
+            <h2>Student Photo</h2>
+            <img src="images/habrim.jpg" alt="Student Picture" width="300" loading="lazy">
+        </section>
+    </div>
+        <section class="certificates">
+            <h2>Web Certificate Courses</h2>
+            <button id="allcourses">All Courses</button>
+            <button id="cse">CSE</button>
+            <button id="wdd">WDD</button>
+            <ul id="courseList"></ul>
+            <p id="totalCredits"></p>
+        </section>
+    </main>
+   <footer>
+        <nav class="socialmedia">
+            <a href="https://www.linkedin.com/in/habrimhernandez-659a27211/">
+                <img src="images/linkedin.svg" alt="linkedin" loading="lazy"></a>
+            <a href="https://github.com/habrimhdz/WDD231">
+                <img src="images/github.svg" alt="github" loading="lazy"></a>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagram.svg" alt="instagram" loading="lazy"></a>
+        </nav>
+         <p>©<span id="currentyear"></span>, Angel Habrim Hernandez Garcia, Mexico</p>
+         <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
