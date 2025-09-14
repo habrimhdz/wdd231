@@ -1,0 +1,96 @@
+{
+  "members": [
+  {
+    "name": "Grupo Lala",
+    "address": "Francisco Villa 1501, Emiliano Zapata, Victoria de Durango, Dgo., 34230, México",
+    "phone": "618 829-2500",
+    "website": "https://www.lala.com.mx",
+    "image": "lala-logo.png",
+    "membershipLevel": 3,
+    "other": {
+      "industry": "Productos Lácteos / Alimentos",
+      "established": 1949,
+      "email": null
+    }
+  },
+  {
+    "name": "Chilchota Alimentos S.A. de C.V.",
+    "address": "Blvd. Ejército Mexicano No. 270, Parque Industrial Carlos A. Herrera Araluce, Gómez Palacio, Dgo., C.P. 35079, México",
+    "phone": "871 719-1681",
+    "website": "https://www.chilchota.mx",
+    "image": "chilchota-logo.webp",
+    "membershipLevel": 3,
+    "other": {
+      "industry": "Lácteos / Alimentación",
+      "employees": "900-1000 aprox",
+      "email": "ventas@chilchota.com"
+    }
+  },
+  {
+    "name": "Transportes Condesa",
+    "address": "Piedras Negras S/N, Esquina Nazas, Parque Industrial Lagunero, Gómez Palacio, Durango, 35079, México",
+    "phone": "871 719-0984",
+    "website": "https://www.tcondesa.com.mx",
+    "image": "logo-condesa.png",
+    "membershipLevel": 2,
+    "other": {
+      "industry": "Transporte / Logística",
+      "founded": 1970,
+      "serviceArea": "Región Lagunera y rutas nacionales"
+    }
+  },
+  {
+    "name": "ADigital Durango",
+    "address": "Victoria de Durango, Dgo., México",
+    "phone": "618 268-7098",
+    "website": "https://adigitaldurango.com/",
+    "image": "adigital.webp",
+    "membershipLevel": 2,
+    "other": {
+      "industry": "Marketing Digital / Publicidad",
+      "yearsInBusiness": 15,
+      "services": ["Páginas Web", "Publicidad en redes sociales", "Fotografía y video"]
+    }
+  },
+  {
+    "name": "Tractocamiones Kenworth de la Laguna, S.A. de C.V.",
+    "address": "Calle Nazas 333, Valle del Nazas, Parque Industrial Valle del Nazas, Gómez Palacio, Dgo., C.P. 35070, México",
+    "phone": "871 748-0600",
+    "website": "http://www.kenworthlaguna.com.mx",
+    "image": "kenworth.png",
+    "membershipLevel": 1,
+    "other": {
+      "industry": "Venta de tractocamiones / Transporte pesado",
+      "email": null
+    }
+  },
+ {
+  "name": "Coficab México",
+  "address": "Carretera Durango-México Km. 9.5, Parque Industrial Ladrilleras, Victoria de Durango, Dgo., C.P. 34308, México",
+  "phone": "618 829-2500",
+  "website": "https://www.coficab.com",
+  "image": "coficab.png",
+  "membershipLevel": 3,
+  "other": {
+    "industry": "Fabricación de cables para la industria automotriz",
+    "established": 1992,
+    "globalPresence": "Plantas en México, Marruecos, Portugal, Rumanía, Túnez, EE.UU. y otros países",
+    "employees": "Más de 3,000 en México",
+    "email": "info.mx@coficab.com"
+  }
+},
+
+  {
+    "name": "Correos de México / Nazas, Dgo.",
+    "address": "Privada 19 Nazas, Centro, San Antonio, 35707, Nazas, Dgo., México",
+    "phone": "800 701-7000",
+    "website": "https://www.correosdemexico.gob.mx",
+    "image": "correos.png",
+    "membershipLevel": 2,
+    "other": {
+      "industry": "Servicios postales / Logística",
+      "hours": "Lun-Vie 8:00-17:00; Sáb 10:00-14:00"
+    }
+  }
+]
+}

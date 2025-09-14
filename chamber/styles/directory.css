@@ -1,0 +1,276 @@
+
+:root {
+--primary-bg: #E0E0E0;         /* Soft Off-White */
+--secondary-accent: #0D6EFD;   /* Bootstrap Blue */
+--text-color: #212529;         /* Dark Gray-Black */
+}
+
+body {
+    font-family: 'Newsreader', sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: var(--text-color);
+    margin-top: 20px;
+}
+
+header img {
+    height: 100px;
+    width: auto;
+}
+
+header {
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid var(--secondary-accent);
+}
+
+li {
+    list-style: none;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.nav-menu a:hover {
+    font-weight: bold;
+}
+
+.logohead {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#cards img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.list {
+    display: grid;
+	grid-template-columns: 1fr;
+    padding: 30px;
+    gap: 15px;
+    text-align: left;
+    
+}
+
+.list section {
+    margin: 0 auto;}
+
+.list section img {
+    display: none !important;
+}
+
+.cards {
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    margin: 0 auto;
+    padding: 30px;
+    gap: 15px;
+}
+
+.cards section {
+    text-align: center;
+}
+
+.cards img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 1rem #555;
+}
+
+
+#cards section {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    width: 350px;
+    text-align: center;
+    background-color: var(--primary-bg);
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    font-size: 2rem;
+    background-color: var(--primary-bg);
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    width: 100%;
+    border: 1px solid var(--secondary-accent);
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu.active {
+    display: flex;
+}
+
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var(--text-color);
+}
+
+/* Dark Mode */
+
+.toggleDark {
+    top: 15px;
+    right: 100px;
+    font-size: 40px;
+    background: none;
+    padding: 5px;
+    color: var(--secondary-accent);
+    border: none;
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: #121212;
+}
+
+.dark-mode header, .dark-mode footer {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+.dark-mode .nav-menu.nav-menu.active {
+    background-color: #121212;
+    box-shadow: 0 0 30px white;
+}
+
+.dark-mode #cards section {
+    background: #121212;
+    border: white 1px solid;
+    color: white;
+}
+
+.dark-mode .nav-menu a {
+    color: white;
+    list-style: none;
+}
+
+.dark-mode h1 {
+    color: white;
+}
+
+.dark-mode a {
+    color: #0d6efd;
+}
+
+/* Hamburger*/
+
+.hamburger {
+        display: block;
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+        background: none;
+        padding: 5px;
+        color: var(--blue-primary);
+        border: none;
+        cursor: pointer;
+        font-size: 50px;
+        color: var(--text-color);
+        
+    }
+
+    main div button {
+        display: block;
+        gap: 30px;
+        font-size: 1rem;
+        padding: 10px;
+        border: 1px solid var(--secondary-accent);
+        border-radius: 10px;
+        background-color: var(--primary-bg);
+        color: var(--text-color);
+        cursor: pointer;
+        margin: 0 auto;
+    }
+
+    .view-buttons {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    main div button:hover {
+        background-color: var(--secondary-accent);
+        color: white;
+        border: 2px solid var(--secondary-accent);
+        font-weight: bold;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
+        flex-direction: row;
+        text-align: center;
+        padding: 10px;
+        background-color: var(--primary-bg);
+        color: var(--text-color);
+        margin-top: 20px;
+        border-top: 2px solid var(--secondary-accent);
+    }
+
+@media screen and (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+
+    .nav-menu {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: transparent;
+        box-shadow: none;
+        width: auto;
+        border: none;
+        font-size: 1.5rem;
+    }
+
+    .nav-menu li {
+        margin: 0 20px;
+    }
+
+    .nav-menu a:hover {
+        color: var(--main-color);
+    }
+
+    .dark-mode .nav-menu a {
+        color: black;
+    }
+
+}

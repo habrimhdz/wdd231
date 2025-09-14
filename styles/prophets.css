@@ -1,0 +1,37 @@
+:root {
+    font-family:'Georgia', serif;
+}
+
+main div {
+    display: grid;
+	grid-gap: 0.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color:mediumpurple;
+}
+
+#cards img {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+#cards section {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 15px;
+    width: 350px;
+    text-align: center;
+    background-color:lavender;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    margin-top: 20px;
+}
