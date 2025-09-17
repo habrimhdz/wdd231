@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Index page of the Chamber of Commerce.">
+    <meta name="author" content="Angel Habrim Hernandez Garcia">
+    <title>Chamber of Commerce Index</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <!-- Font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+    <!-- Facebook like stuff-->
+     <meta property="og:title" content="Chamber of Commerce Directory">
+    <meta property="og:description" content="This is a list of all businesses involve in the current Chamber of Commerce">
+    <meta property="og:image" content="https://github.com/habrimhdz/wdd231/blob/main/chamber/images/logo.svg"> 
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://habrimhdz.github.io/wdd231/chamber/directory.html">
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body class="index">
+        <header>
+        <div class="logohead">
+        <img src="images/logo.svg" alt="Logo" width="200" loading="lazy">
+        <h2>Durango Chamber of Commerce</h2>
+        </div>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+          <nav class="navbar">
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="directory.html" id="Directory">Directory</a></li>
+                <li><a href="join.html" id="join">Join</a></li>
+                <li><a href="discovery.html" id="discovery">Discovery</a></li>
+            </ul>
+        </nav>
+        <button class="toggleDark" id="toggleDark">&#127769;</button>
+    </header>
+    <main>
+        <img class="hero" src="images/hero.jpg" alt="Chamber of Commerce Image" loading="lazy">
+        <hr>
+        <h1 class="homeh1">Home</h1>
+        <a class="cta" href="#">Join the Chamber of Commerce!</a>
+        <div class="indexcontent">
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <p>-Inauguration: Date Pending</p>
+        </section>
+        <section class="weather">
+            <h2>Current weather</h2>
+            <figure class="currentweather">
+                <img id="weather-icon" loading="lazy">
+                <div>
+                <span id="temperature"></span>
+                <p id="weatherdesc"></p>
+                </div>
+            </figure>
+        </section>
+        <section class="forecast">
+            <h2>Forecast</h2>
+            <span id="forecast"></span>
+        </section>
+        </div>
+        <section class="spotlight">
+            <h2>Member Spotlight</h2>
+            <div class="cards" id="cards"></div>
+        </section>
+            </main>
+    <footer>
+        <div class="contactinfo">
+            <h3>Durango Chamber of Commerce</h3>
+            <p>123 Main St, Durango<br>
+            Luis Echeverria, 34250<br>
+            dcoc@gmail.com<br>
+            (618) 111 2222</p>
+        </div>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com/">
+                <img src="images/facebook.webp" alt="Facebook" loading="lazy" width="50"></a>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagram.webp" alt="Instagram" loading="lazy" width="50"></a>
+            <a href="https://www.X.com/">
+                <img src="images/x.webp" alt="Twitter" loading="lazy" width="45"></a>
+        </nav>
+        <div class="classinfo">
+            <p>WDD 231 - Class Project<br>
+            Angel Habrim Hernandez Garcia, Mexico<br>
+            ©<span id="currentyear"></span>, Durango Chamber of Commerce<br>
+         Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -13,16 +13,26 @@ body {
     padding: 0;
 }
 
+
+
 h1 {
     text-align: center;
     color: var(--text-color);
-    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.spotlight h2 {
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 60px;
 }
 
 header img {
     height: 100px;
     width: auto;
 }
+
 
 header {
     background-color: var(--primary-bg);
@@ -32,6 +42,46 @@ header {
     align-items: center;
     padding: 10px 20px;
     border-bottom: 2px solid var(--secondary-accent);
+}
+
+.hero {
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 0 1.5rem black;
+    margin-bottom: 50px;
+}
+
+.cta {
+    display: block;
+    text-align: center;
+    background-color: var(--primary-bg);
+    padding: 20px;
+    border: 2px solid var(--secondary-accent);
+    border-radius: 10px;
+    box-shadow: 0 0 1rem black;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    width: 200px;
+    margin: 0 auto 50px auto;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    
+}
+
+.cta:hover {
+    background-color: var(--secondary-accent);
+    color: white;
+    border: 2px solid var(--secondary-accent);
+    font-weight: bold;
+}
+
+hr {
+    border: 0;
+    height: 1.5px;
+    background: var(--secondary-accent);
+    margin-bottom: 50px;
 }
 
 li {
@@ -78,16 +128,14 @@ li {
 }
 
 .cards {
-    display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    margin: 0 auto;
-    padding: 30px;
-    gap: 15px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+margin: 0 auto;
+padding: 30px;
+gap: 15px;
+justify-items: center;
 }
 
-.cards section {
-    text-align: center;
-}
 
 .cards img {
     border: 1px solid #fff;
@@ -103,6 +151,40 @@ li {
     text-align: center;
     background-color: var(--primary-bg);
 }
+
+.events {
+    text-align: left;
+    padding: 20px;
+    margin-left: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem black;
+    background-color: var(--primary-bg);
+    width: 40%;
+}
+
+.events p {
+    margin: 5px 0;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.weather {
+    text-align: left;
+    padding: 20px;
+    margin-right: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem black;
+    background-color: var(--primary-bg);
+    width: 20%;}
+
+.forecast {
+    text-align: left;
+    padding: 20px;
+    margin-right: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem black;
+    background-color: var(--primary-bg);
+    width: 20%;}
 
 .socialmedia {
     display: flex;
@@ -152,6 +234,9 @@ li {
     border: none;
     cursor: pointer;
 }
+.dark-mode .events p,  .dark-mode header h2 {
+    color: white;
+}
 
 .dark-mode {
     background-color: #121212;
@@ -178,14 +263,60 @@ li {
     list-style: none;
 }
 
-.dark-mode h1 {
-    color: white;
-}
-
 .dark-mode a {
     color: #0d6efd;
 }
 
+.dark-mode .cta {
+    background-color: #121212;
+    border: 2px solid #0d6efd;
+    color: #0d6efd;
+}
+
+.dark-mode .cta:hover {
+    background-color: #0d6efd;
+    color: white;
+    border: 2px solid #0d6efd;
+    font-weight: bold;
+}
+
+.dark-mode .weather, .dark-mode .events, .dark-mode .forecast {
+    background-color: #121212;
+    box-shadow: 0 0 30px white;
+}
+
+.dark-mode .events p {
+    background-color: #333;
+}
+
+.dark-mode footer, .dark-mode header, .dark-mode #cards h2, .dark-mode h1, .dark-mode h2, .dark-mode .weather span, .dark-mode .weather figcaption, .dark-mode .forecast h3, .dark-mode .forecast p {
+    filter: invert(1);
+}
+
+.currentweather {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+}
+
+.weather figure img {
+
+    height: 70px;
+    width: auto;
+    margin: 0;
+    
+}
+
+#forecast {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 10px;
+}
 /* Hamburger*/
 
 .hamburger {
@@ -243,6 +374,18 @@ li {
         margin-top: 20px;
         border-top: 2px solid var(--secondary-accent);
     }
+@media screen and (max-width: 767px) {
+
+    .indexcontent {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    }
+}
 
 @media screen and (min-width: 768px) {
     .hamburger {
@@ -271,6 +414,12 @@ li {
 
     .dark-mode .nav-menu a {
         color: black;
+    }
+
+    .indexcontent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
 }
