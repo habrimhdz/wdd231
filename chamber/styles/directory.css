@@ -234,7 +234,7 @@ justify-items: center;
     border: none;
     cursor: pointer;
 }
-.dark-mode .events p,  .dark-mode header h2 {
+.dark-mode .events p,  .dark-mode h2:not(.not), .dark-mode .currentweather p, .dark-mode form label, .dark-mode form legend {
     color: white;
 }
 
@@ -242,10 +242,6 @@ justify-items: center;
     background-color: #121212;
 }
 
-.dark-mode header, .dark-mode footer {
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
-    color: black;
-}
 
 .dark-mode .nav-menu.nav-menu.active {
     background-color: #121212;
@@ -289,7 +285,7 @@ justify-items: center;
     background-color: #333;
 }
 
-.dark-mode footer, .dark-mode header, .dark-mode #cards h2, .dark-mode h1, .dark-mode h2, .dark-mode .weather span, .dark-mode .weather figcaption, .dark-mode .forecast h3, .dark-mode .forecast p {
+.dark-mode footer, .dark-mode header, .dark-mode h1, .dark-mode .weather span, .dark-mode .weather figcaption, .dark-mode .forecast h3, .dark-mode .forecast p, .dark-mode .joinmain .cards {
     filter: invert(1);
 }
 
@@ -374,6 +370,88 @@ justify-items: center;
         margin-top: 20px;
         border-top: 2px solid var(--secondary-accent);
     }
+
+    .card1, .card2, .card3, .card4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: var(--secondary-accent);
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+        box-shadow: 0 0 2px black;
+        margin: 10px;
+        width: 90%
+       }
+
+
+
+
+    .cards h2 {
+        text-shadow: 0 0 1px black;
+    }
+
+     .cards a {
+        color: black;
+        background-color: var(--primary-bg);
+        padding: 5px;
+        border-radius: 5px;
+        text-decoration: none;
+     }
+
+     .cards a:hover {
+        border: 2px solid var(--secondary-accent);
+        font-weight: bold;
+     }
+
+     dialog {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 0 1rem black;
+        padding: 20px;
+        max-width: 500px;
+        width: 90%;
+     }
+
+    dialog::backdrop {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+   .yourinfo {
+  display: flex;           
+  flex-direction: column;   
+  gap: 10px;                
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.yourinfo label {
+  display: flex;
+  flex-direction: column;  
+  font-weight: bold;
+}
+
+.yourinfo input, .yourinfo select, #membershipLevel, textarea {
+  padding: 8px;             
+  border: 1px solid #ccc;  
+  border-radius: 4px;      
+  font-size: 1rem;   
+    width: 90%;
+
+}
+
+.card1, .card2, .card3, .card4 {
+    animation: simpleFadeIn 2.5s ease-in;
+}
+
+@keyframes simpleFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
 @media screen and (max-width: 767px) {
 
     .indexcontent {
@@ -385,6 +463,7 @@ justify-items: center;
     align-items: center;
     text-align: center;
     }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -421,5 +500,21 @@ justify-items: center;
         justify-content: space-between;
         align-items: center;
     }
+
+     .joinpage main  {
+        display: flex;
+        flex-direction: row;  
+        flex-wrap: wrap;     
+        gap: 30px;                 
+        align-items: flex-start;   
+        justify-content: center;   
+        flex-wrap: wrap;  
+        margin-left: 20px;    
+    }
+
+    .yourinfo {
+        width: 125%;
+    }
+    
 
 }

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apply to Join to the page of the Chamber of Commerce.">
+    <meta name="author" content="Angel Habrim Hernandez Garcia">
+    <title>Chamber of Commerce Join Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <!-- Font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+    <!-- Facebook like stuff-->
+     <meta property="og:title" content="Chamber of Commerce Index">
+    <meta property="og:description" content="Join Page of Chamber of Commerce">
+    <meta property="og:image" content="https://github.com/habrimhdz/wdd231/blob/main/chamber/images/logo.svg"> 
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://habrimhdz.github.io/wdd231/chamber/index.html">
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body class="index joinpage">
+        <header>
+        <div class="logohead">
+        <img src="images/logo.svg" alt="Logo" width="200" loading="lazy">
+        <h2 class="not">Durango Chamber of Commerce</h2>
+        </div>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+          <nav class="navbar">
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="directory.html" id="Directory">Directory</a></li>
+                <li><a href="join.html" id="join">Join</a></li>
+                <li><a href="discovery.html" id="discovery">Discovery</a></li>
+            </ul>
+        </nav>
+        <button class="toggleDark" id="toggleDark">&#127769;</button>
+    </header>
+    <h1>Join Us</h1>
+    <main class="joinmain">
+    <form method="get" action="thankyou.html">
+    <fieldset class="yourinfo">
+            <legend>Your Info:</legend>
+            <label for="firstName">First Name:
+            <input type="text" id="firstName" name="firstName" placeholder="First Name" title="Please enter your first name" required autocomplete="given-name"></label>
+        <label for="lastName">Last Name:
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name" title="Enter your last name" required autocomplete="family-name">
+        </label>
+        <label for="organizationTitle"> Your Organizational Title:
+            <input type="text" id="organizationTitle" name="organizationTitle" placeholder="Organizational Title" title="Enter your Organizational Title (minimum 7 characters)" required autocomplete="organization-title" pattern="^[A-Za-z\- ]{7,}$"
+        minlength="7"></label>
+            <label for="email">Email:
+            <input type="email" id="email" name="email" title="Enter your email" autocomplete="email" placeholder="xyz@youremail.com" required>
+            </label>
+            <label for="telephone">Telephone:
+            <input type="tel" id="telephone" name="telephone" title="Enter your telephone" autocomplete="tel" placeholder="Telephone">
+            </label>
+            <label for="business">Your Business:
+            <input type="text" id="business" name="business" title="Your business" autocomplete="organization" placeholder="Business Name">
+            </label>
+      </fieldset>
+      <br>
+
+      <fieldset>
+        <br>
+        <legend>Membership level:</legend>
+      <select id="membershipLevel" name="membershipLevel">
+        <option disable selected>Select your Membership Level...</option>
+        <option>NP Membership (Non-profit organizations. No fees)</option>
+        <option>Bronze Membership</option>
+        <option>Silver Membership</option>
+        <option>Gold Membership</option>
+      </select>
+      <br><br>
+      </fieldset>
+    <br>
+
+
+      <fieldset>
+      <legend>Description of The Business</legend>
+      <textarea id="description" name="description" title="Describe your business:" rows="7" cols="30" placeholder="Describe your business..."></textarea>
+
+      <label for="timestamp">
+      <input type="hidden" id="timestamp" name="timestamp">
+      </label>
+    <br>
+
+      <input type="submit" value="Send">
+    </fieldset>
+    </form>
+
+    <section class="cards">
+    <div class="card1">
+            <h2>NP Membership</h2>
+            <p>No fees</p>
+            <a href="#" class="open-modal" data-dialog="npDialog">More info</a>
+            <dialog id="npDialog" class="modal">
+                <div class="modal-content">
+                <h3>NP Membership</h3>
+                <p>Non-profit organizations. No fees.</p>
+                <button class="close-modal">Close</button>
+                </div>
+    </div>
+
+        <div class="card2">
+            <h2>Bronze Membership</h2>
+            <p>$100 per year</p>
+            <a href="#" class="open-modal" data-dialog="bronzeDialog">More info</a>
+            <dialog id="bronzeDialog" class="modal">
+                <div class="modal-content">
+                <h3>Bronze Membership</h3>
+                <p>$100 per year. Includes listing in the online directory, access to networking events, and monthly newsletter.</p>
+                <button class="close-modal">Close</button>
+                </div>
+        </div>
+
+        <div class="card3">
+            <h2>Silver Membership</h2>
+            <p>$200 per year</p>
+            <a href="#" class="open-modal" data-dialog="silverDialog">More info</a>
+            <dialog id="silverDialog" class="modal">
+                <div class="modal-content">
+                <h3>Silver Membership</h3>
+                <p>$200 per year. Includes all Bronze benefits plus priority listing in the online directory, free admission to select events, and promotional opportunities.</p>
+                <button class="close-modal">Close</button>
+                </div>
+        </div>
+
+        <div class="card4">
+            <h2>Gold Membership</h2>
+            <p>$300 per year</p>
+            <a href="#" class="open-modal" data-dialog="goldDialog">More info</a>
+            <dialog id="goldDialog" class="modal">
+                <div class="modal-content">
+                <h3>Gold Membership</h3>
+                <p>$300 per year. Includes all Silver benefits plus premium listing in the online directory, exclusive networking opportunities, and featured spotlights in our newsletter and social media.</p>
+                <button class="close-modal">Close</button>
+                </div>
+            </div>
+    </section>
+    </main>
+    </body>
+     <footer>
+        <div class="contactinfo">
+            <h3>Durango Chamber of Commerce</h3>
+            <p>123 Main St, Durango<br>
+            Luis Echeverria, 34250<br>
+            dcoc@gmail.com<br>
+            (618) 111 2222</p>
+        </div>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com/">
+                <img src="images/facebook.webp" alt="Facebook" loading="lazy" width="50"></a>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagram.webp" alt="Instagram" loading="lazy" width="50"></a>
+            <a href="https://www.X.com/">
+                <img src="images/x.webp" alt="Twitter" loading="lazy" width="45"></a>
+        </nav>
+        <div class="classinfo">
+            <p>WDD 231 - Class Project<br>
+            Angel Habrim Hernandez Garcia, Mexico<br>
+            ©<span id="currentyear"></span>, Durango Chamber of Commerce<br>
+         Last Modified: <span id="lastModified"></span></p>
+        </div>  
+    </footer>
+</html>
