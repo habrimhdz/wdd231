@@ -284,7 +284,7 @@ li {
 .dark-mode .weather figcaption,
 .dark-mode .forecast h3,
 .dark-mode .forecast p,
-.dark-mode .joinmain .cards, .dark-mode .itemCards h2 {
+.dark-mode .joinmain .cards, .dark-mode .itemCards h2, .dark-mode #visitMessage {
     filter: invert(1);
 }
 
@@ -467,6 +467,9 @@ textarea {
     grid-area: button;
 }
 
+#visitMessage {
+    text-align: center;
+}
 
 @media screen and (max-width: 640px) {
     .indexcontent {
