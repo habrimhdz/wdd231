@@ -32,9 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const lastModifiedEl = document.getElementById("lastModified");
   if (lastModifiedEl) lastModifiedEl.textContent = lastModified;
 
-  // -----------------------------
+ 
   // Timestamp for Form
-  // -----------------------------
+  
   const timestampInput = document.getElementById('timestamp');
   if (timestampInput) {
     timestampInput.value = new Date().toISOString();
@@ -251,3 +251,82 @@ document.addEventListener("DOMContentLoaded", () => {
 
   fetchForecast();
 });
+
+async function buildItemCards() {
+  const response = await fetch('data/items.json');
+  if (!response.ok) return;
+  const data = await response.json();
+  const items = data.items.slice(0, 8);
+
+  const container = document.getElementById('itemCards');
+  if (!container) return;
+
+  items.forEach(item => {
+    const card = document.createElement('section');
+
+    const title = document.createElement('h2');
+    title.textContent = item.name;
+
+    const figure = document.createElement('figure');
+    const img = document.createElement('img');
+    img.src = item.image;
+    img.alt = item.title;
+    img.loading = 'lazy';
+    img.width = 300;
+    img.height = 200;
+    figure.appendChild(img);
+
+    const address = document.createElement('address');
+    address.textContent = item.address;
+
+    const desc = document.createElement('p');
+    desc.textContent = item.description;
+
+    const button = document.createElement('button');
+    button.textContent = 'Learn More';
+
+    card.appendChild(title);
+    card.appendChild(figure);
+    card.appendChild(address);
+    card.appendChild(desc);
+    card.appendChild(button);
+
+    container.appendChild(card);
+  });
+}
+
+buildItemCards();
+
+document.addEventListener('DOMContentLoaded', () => {
+  const messageContainer = document.createElement('div');
+  messageContainer.id = 'visitMessage';
+  messageContainer.style.padding = '10px';
+  messageContainer.style.textAlign = 'center';
+
+  const lastVisit = localStorage.getItem('lastVisit');
+  const now = Date.now();
+
+  let message = '';
+
+  if (!lastVisit) {
+  
+    message = 'Welcome! Let us know if you have any questions.';
+  } else {
+    const msBetweenVisits = now - Number(lastVisit);
+    const daysBetween = Math.floor(msBetweenVisits / (1000 * 60 * 60 * 24));
+
+    if (daysBetween < 1) {
+      message = 'Back so soon! Awesome!';
+    } else if (daysBetween === 1) {
+      message = `You last visited ${daysBetween} day ago.`;
+    } else {
+      message = `You last visited ${daysBetween} days ago.`;
+    }
+  }
+
+  messageContainer.textContent = message;
+  document.querySelector('main')?.prepend(messageContainer);
+
+  localStorage.setItem('lastVisit', now);
+});
+

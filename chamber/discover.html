@@ -3,9 +3,9 @@
 <head>
      <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Directory of businesses in the Chamber of Commerce.">
+    <meta name="description" content="Discovery page of the Chamber of Commerce.">
     <meta name="author" content="Angel Habrim Hernandez Garcia">
-    <title>Chamber of Commerce Directory</title>
+    <title>Chamber of Commerce Discovery Page</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="icon" href="images/logo.svg" type="image/svg+xml">
@@ -14,14 +14,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
     <!-- Facebook like stuff-->
-     <meta property="og:title" content="Chamber of Commerce Directory">
-    <meta property="og:description" content="This is a list of all businesses involve in the current Chamber of Commerce">
+     <meta property="og:title" content="Chamber of Commerce Index">
+    <meta property="og:description" content="Landing Page of Chamber of Commerce">
     <meta property="og:image" content="https://github.com/habrimhdz/wdd231/blob/main/chamber/images/logo.svg"> 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://habrimhdz.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://habrimhdz.github.io/wdd231/chamber/index.html">
     <script src="scripts/directory.js" defer></script>
 </head>
-<body class="directory">
+<body class="discover">
         <header>
         <div class="logohead">
         <img src="images/logo.svg" alt="Logo" width="200" loading="lazy">
@@ -33,20 +33,14 @@
                 <li><a href="index.html" id="home">Home</a></li>
                 <li><a href="directory.html" id="Directory">Directory</a></li>
                 <li><a href="join.html" id="join">Join</a></li>
-                <li><a href="discover.html" id="discovery">Discover</a></li>
+                <li><a href="discover.html" id="discover">Discover</a></li>
             </ul>
         </nav>
         <button class="toggleDark" id="toggleDark">&#127769;</button>
     </header>
-    <main>
-        <h1>Business Directory</h1>
-        <div class="view-buttons">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
-        </div>
-        <div class="grid">
-            <section class="cards" id="cards"></section>
-        </div>
+    <main> 
+    <div id="itemCards" class="itemCards"></div>
+    <div id="visitMessage" class="visit-message"></div>
     </main>
     <footer>
         <div class="contactinfo">

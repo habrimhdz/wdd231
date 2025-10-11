@@ -284,7 +284,7 @@ li {
 .dark-mode .weather figcaption,
 .dark-mode .forecast h3,
 .dark-mode .forecast p,
-.dark-mode .joinmain .cards {
+.dark-mode .joinmain .cards, .dark-mode .itemCards h2 {
     filter: invert(1);
 }
 
@@ -431,7 +431,44 @@ textarea {
     to { opacity: 1; }
 }
 
-@media screen and (max-width: 767px) {
+/* Discover Page*/
+
+.itemCards section {
+    margin: 1rem 8px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: var(--primary-bg);
+    padding: 10px;
+    overflow: hidden;
+    display: grid;
+}
+
+.itemCards h2 {
+    grid-area: title;
+}
+
+.itemCards img {
+    grid-area: image;
+    justify-self: center;
+    align-self: center;
+}
+
+.itemCards p {
+    grid-area: description;
+}
+
+.itemCards address {
+    grid-area: address;
+}
+
+.itemCards button {
+    width: 80%;
+    margin: 10px auto;
+    grid-area: button;
+}
+
+
+@media screen and (max-width: 640px) {
     .indexcontent {
         display: grid;
         grid-template-columns: 1fr;
@@ -441,9 +478,75 @@ textarea {
         align-items: center;
         text-align: center;
     }
+
+    #itemCards section {
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "image"
+    "description"
+    "address"
+    "button";
 }
 
-@media screen and (min-width: 768px) {
+.itemCards img {
+    grid-area: image;
+    justify-self: center;
+}
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1040px) {
+    
+    #itemCards section {
+    display: grid;
+    grid-template-areas: 
+    "title title"
+    "image description"
+    "image address"
+    "button button"
+    ;
+}
+
+.itemCards img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+  }
+
+  .itemCards img:hover {
+    transform: scale(1.05) rotate(2deg); /* slightly zoom + rotate */
+    filter: brightness(1.1) drop-shadow(0 4px 10px rgba(0,0,0,0.3));
+  }
+
+}
+
+@media screen and (min-width: 1040px) {
+
+    .itemCards img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+  }
+
+  .itemCards img:hover {
+    transform: scale(1.05) rotate(2deg);
+    filter: brightness(1.1) drop-shadow(0 4px 10px rgba(0,0,0,0.3));
+  }
+
+    .itemCards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .itemCards section {
+    display: grid;
+    grid-template-areas: 
+    "title title"
+    "image description"
+    "image address"
+    "button button";
+    gap: 10px;
+    padding: 10px;
+    
+    }
     .hamburger {
         display: none;
     }

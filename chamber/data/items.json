@@ -1,0 +1,52 @@
+{
+    "items": [
+        {
+            "name": "Museo Francisco Villa",
+            "address": "Av. 5 de Febrero 800, Zona Centro, 34000 Durango, Dgo.",
+            "description": "This museum, housed in a 19th-century building, celebrates the life of Mexican revolutionary Pancho Villa with exhibits of his personal belongings, photographs, and historic artifacts.",
+            "image": "images/museofv.webp"
+        },
+        {
+            "name": "Catedral Basílica Menor de Durango",
+            "address": "Calle Constitución 200, Zona Centro, 34000 Durango, Dgo.",
+            "description": "A stunning example of baroque architecture, the Durango Cathedral is one of the city's most recognizable landmarks, featuring ornate gold interiors and impressive frescoes.",
+            "image": "images/catedral.webp"
+        },
+        {
+            "name": "Teleférico de Durango",
+            "address": "Cerro del Calvario, Zona Centro, 34000 Durango, Dgo.",
+            "description": "The Durango Cable Car offers panoramic views of the historic downtown area and surrounding mountains, providing a unique perspective of the city.",
+            "image": "images/telef.webp"
+        },
+        {
+            "name": "Parque Guadiana",
+            "address": "Av. Heroico Colegio Militar S/N, Col. Los Angeles, 34100 Durango, Dgo.",
+            "description": "Durango’s largest public park, perfect for jogging, picnics, and family activities, featuring fountains, bike paths, and a small lake with pedal boats.",
+            "image": "images/guadiana.webp"
+        },
+        {
+            "name": "Calle Constitución",
+            "address": "Calle Constitución, Zona Centro, 34000 Durango, Dgo.",
+            "description": "A lively pedestrian street filled with cafes, local shops, and colonial-era architecture, ideal for evening walks and local shopping.",
+            "image": "images/constitucion.webp"
+        },
+        {
+            "name": "Túnel de Minería",
+            "address": "Calle Bruno Martínez s/n, Zona Centro, 34000 Durango, Dgo.",
+            "description": "An underground museum that recreates Durango’s mining history, allowing visitors to walk through realistic tunnels and learn about the state’s silver and gold mining heritage.",
+            "image": "images/tunel.webp"
+        },
+        {
+            "name": "El Salto Waterfalls",
+            "address": "El Salto, Pueblo Nuevo, Durango, Dgo.",
+            "description": "Located about 2 hours from Durango city, these breathtaking waterfalls surrounded by pine forests are a popular spot for hiking and nature photography.",
+            "image": "images/salto.webp"
+        },
+        {
+            "name": "Old West Movie Set (Parque Temático Paseo del Viejo Oeste)",
+            "address": "Km 12 Carretera a Parral, Durango, Dgo.",
+            "description": "A themed park built on the filming location of many classic Western movies, where visitors can explore movie sets and enjoy cowboy reenactments.",
+            "image": "images/west.webp"
+        }
+    ]
+}
