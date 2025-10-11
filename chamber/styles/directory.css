@@ -1,8 +1,7 @@
-
 :root {
---primary-bg: #E0E0E0;         /* Soft Off-White */
---secondary-accent: #0D6EFD;   /* Bootstrap Blue */
---text-color: #212529;         /* Dark Gray-Black */
+    --primary-bg: #E0E0E0;         /* Soft Off-White */
+    --secondary-accent: #0D6EFD;   /* Bootstrap Blue */
+    --text-color: #212529;         /* Dark Gray-Black */
 }
 
 body {
@@ -12,8 +11,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-
 
 h1 {
     text-align: center;
@@ -33,7 +30,6 @@ header img {
     width: auto;
 }
 
-
 header {
     background-color: var(--primary-bg);
     color: var(--text-color);
@@ -47,9 +43,8 @@ header {
 .hero {
     width: 100%;
     display: block;
-    margin: 20px auto;
+    margin: 20px auto 50px auto;
     box-shadow: 0 0 1.5rem black;
-    margin-bottom: 50px;
 }
 
 .cta {
@@ -67,7 +62,6 @@ header {
     margin: 0 auto 50px auto;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, border 0.3s;
-    
 }
 
 .cta:hover {
@@ -113,35 +107,33 @@ li {
 
 .list {
     display: grid;
-	grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
     padding: 30px;
     gap: 15px;
     text-align: left;
-    
 }
 
 .list section {
-    margin: 0 auto;}
+    margin: 0 auto;
+}
 
 .list section img {
     display: none !important;
 }
 
 .cards {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-margin: 0 auto;
-padding: 30px;
-gap: 15px;
-justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    margin: 0 auto;
+    padding: 30px;
+    gap: 15px;
+    justify-items: center;
 }
-
 
 .cards img {
     border: 1px solid #fff;
     box-shadow: 0 0 1rem #555;
 }
-
 
 #cards section {
     border: 1px solid black;
@@ -168,15 +160,7 @@ justify-items: center;
     padding: 10px;
 }
 
-.weather {
-    text-align: left;
-    padding: 20px;
-    margin-right: 5px;
-    border-radius: 10px;
-    box-shadow: 0 0 1rem black;
-    background-color: var(--primary-bg);
-    width: 20%;}
-
+.weather,
 .forecast {
     text-align: left;
     padding: 20px;
@@ -184,7 +168,8 @@ justify-items: center;
     border-radius: 10px;
     box-shadow: 0 0 1rem black;
     background-color: var(--primary-bg);
-    width: 20%;}
+    width: 20%;
+}
 
 .socialmedia {
     display: flex;
@@ -192,7 +177,6 @@ justify-items: center;
     align-items: center;
     gap: 10px;
 }
-
 
 .nav-menu {
     display: none;
@@ -215,14 +199,15 @@ justify-items: center;
 }
 
 .hamburger {
-    font-size: 30px;
+    font-size: 50px;
     cursor: pointer;
     background: none;
     border: none;
     color: var(--text-color);
+    top: 10px;
+    right: 10px;
+    padding: 5px;
 }
-
-/* Dark Mode */
 
 .toggleDark {
     top: 15px;
@@ -234,14 +219,19 @@ justify-items: center;
     border: none;
     cursor: pointer;
 }
-.dark-mode .events p,  .dark-mode h2:not(.not), .dark-mode .currentweather p, .dark-mode form label, .dark-mode form legend {
+
+/* Dark Mode */
+.dark-mode .events p,
+.dark-mode h2:not(.not),
+.dark-mode .currentweather p,
+.dark-mode form label,
+.dark-mode form legend {
     color: white;
 }
 
 .dark-mode {
     background-color: #121212;
 }
-
 
 .dark-mode .nav-menu.nav-menu.active {
     background-color: #121212;
@@ -276,7 +266,9 @@ justify-items: center;
     font-weight: bold;
 }
 
-.dark-mode .weather, .dark-mode .events, .dark-mode .forecast {
+.dark-mode .weather,
+.dark-mode .events,
+.dark-mode .forecast {
     background-color: #121212;
     box-shadow: 0 0 30px white;
 }
@@ -285,7 +277,14 @@ justify-items: center;
     background-color: #333;
 }
 
-.dark-mode footer, .dark-mode header, .dark-mode h1, .dark-mode .weather span, .dark-mode .weather figcaption, .dark-mode .forecast h3, .dark-mode .forecast p, .dark-mode .joinmain .cards {
+.dark-mode footer,
+.dark-mode header,
+.dark-mode h1,
+.dark-mode .weather span,
+.dark-mode .weather figcaption,
+.dark-mode .forecast h3,
+.dark-mode .forecast p,
+.dark-mode .joinmain .cards {
     filter: invert(1);
 }
 
@@ -300,11 +299,9 @@ justify-items: center;
 }
 
 .weather figure img {
-
     height: 70px;
     width: auto;
     margin: 0;
-    
 }
 
 #forecast {
@@ -313,137 +310,120 @@ justify-items: center;
     font-size: 1rem;
     margin-top: 10px;
 }
-/* Hamburger*/
 
-.hamburger {
-        display: block;
-        top: 10px;
-        right: 10px;
-        font-size: 30px;
-        background: none;
-        padding: 5px;
-        color: var(--blue-primary);
-        border: none;
-        cursor: pointer;
-        font-size: 50px;
-        color: var(--text-color);
-        
-    }
+main div button {
+    display: block;
+    gap: 30px;
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid var(--secondary-accent);
+    border-radius: 10px;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    cursor: pointer;
+    margin: 0 auto;
+}
 
-    main div button {
-        display: block;
-        gap: 30px;
-        font-size: 1rem;
-        padding: 10px;
-        border: 1px solid var(--secondary-accent);
-        border-radius: 10px;
-        background-color: var(--primary-bg);
-        color: var(--text-color);
-        cursor: pointer;
-        margin: 0 auto;
-    }
+.view-buttons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
 
-    .view-buttons {
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        gap: 5px;
-    }
+main div button:hover {
+    background-color: var(--secondary-accent);
+    color: white;
+    border: 2px solid var(--secondary-accent);
+    font-weight: bold;
+}
 
-    main div button:hover {
-        background-color: var(--secondary-accent);
-        color: white;
-        border: 2px solid var(--secondary-accent);
-        font-weight: bold;
-    }
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    flex-direction: row;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    margin-top: 20px;
+    border-top: 2px solid var(--secondary-accent);
+}
 
-    footer {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        gap: 30px;
-        flex-direction: row;
-        text-align: center;
-        padding: 10px;
-        background-color: var(--primary-bg);
-        color: var(--text-color);
-        margin-top: 20px;
-        border-top: 2px solid var(--secondary-accent);
-    }
+.card1,
+.card2,
+.card3,
+.card4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--secondary-accent);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 2px black;
+    margin: 10px;
+    width: 400px;
+    animation: simpleFadeIn 2.5s ease-in;
+}
 
-    .card1, .card2, .card3, .card4 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        background-color: var(--secondary-accent);
-        padding: 10px;
-        border-radius: 10px;
-        color: white;
-        box-shadow: 0 0 2px black;
-        margin: 10px;
-        width: 400px;
-       }
+.cards h2 {
+    text-shadow: 0 0 1px black;
+}
 
+.cards a {
+    color: black;
+    background-color: var(--primary-bg);
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
 
+.cards a:hover {
+    border: 2px solid var(--secondary-accent);
+    font-weight: bold;
+}
 
+dialog {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem black;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+}
 
-    .cards h2 {
-        text-shadow: 0 0 1px black;
-    }
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.8);
+}
 
-     .cards a {
-        color: black;
-        background-color: var(--primary-bg);
-        padding: 5px;
-        border-radius: 5px;
-        text-decoration: none;
-     }
-
-     .cards a:hover {
-        border: 2px solid var(--secondary-accent);
-        font-weight: bold;
-     }
-
-     dialog {
-        border: none;
-        border-radius: 10px;
-        box-shadow: 0 0 1rem black;
-        padding: 20px;
-        max-width: 500px;
-        width: 90%;
-     }
-
-    dialog::backdrop {
-            background: rgba(0, 0, 0, 0.8);
-        }
-
-   .yourinfo {
-  display: flex;           
-  flex-direction: column;   
-  gap: 10px;                
-  padding: 15px;
-  border-radius: 8px;
+.yourinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 8px;
 }
 
 .yourinfo label {
-  display: flex;
-  flex-direction: column;  
-  font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
 }
 
-.yourinfo input, .yourinfo select, #membershipLevel, textarea {
-  padding: 8px;             
-  border: 1px solid #ccc;  
-  border-radius: 4px;      
-  font-size: 1rem;   
+.yourinfo input,
+.yourinfo select,
+#membershipLevel,
+textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
     width: 90%;
-
-}
-
-.card1, .card2, .card3, .card4 {
-    animation: simpleFadeIn 2.5s ease-in;
 }
 
 @keyframes simpleFadeIn {
@@ -451,19 +431,16 @@ justify-items: center;
     to { opacity: 1; }
 }
 
-
 @media screen and (max-width: 767px) {
-
     .indexcontent {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
     }
-
 }
 
 @media screen and (min-width: 768px) {
@@ -502,34 +479,28 @@ justify-items: center;
     }
 
     .columns {
-    display: flex;               
-    gap: 30px;                   
-    align-items: flex-start;     
-    flex-wrap: wrap;   
-    justify-content: center;
-    margin-bottom: 50px;
+        display: flex;
+        gap: 30px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
 
-}
-
-.columns form {
-    flex: 1 1 300px;             
-    max-width: 400px;            
-}
-
-.columns .cards {
-    flex: 2 1;             
-    display: flex;               
-    flex-wrap: wrap;             
-    gap: 20px; 
-    justify-content: center;
-    max-width: 800px;            
-}
-
-    .columns form{
+    .columns form {
+        flex: 1 1 300px;
+        max-width: 400px;
         display: grid;
         width: 100%;
         margin-left: 100px;
     }
-    
 
+    .columns .cards {
+        flex: 2 1;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        max-width: 800px;
+    }
 }
