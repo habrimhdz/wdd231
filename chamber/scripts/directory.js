@@ -297,11 +297,14 @@ async function buildItemCards() {
 
 buildItemCards();
 
+
 document.addEventListener('DOMContentLoaded', () => {
+  if (!window.location.href.includes('discover.html')) return;
   const messageContainer = document.createElement('div');
   messageContainer.id = 'visitMessage';
   messageContainer.style.padding = '10px';
   messageContainer.style.textAlign = 'center';
+  messageContainer.style.fontWeight = 'bold';
 
   const lastVisit = localStorage.getItem('lastVisit');
   const now = Date.now();
