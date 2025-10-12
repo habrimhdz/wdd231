@@ -6,32 +6,54 @@
     <meta name="author" content="Angel Habrim Hernandez Garcia">
     <meta name="description" content="Landing Page">
      <link rel="stylesheet" href="styles/finalproject.css">
+     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Main Project Page for Glazing Vision</title>
     <meta property="og:title" content="Glazing Vision Landing Page">
     <meta property="og:description" content="Main Page for Glazing Vision">
-    <meta property="og:image" content="https://github.com/habrimhdz/wdd231/blob/main/chamber/images/logo.svg"> 
+    <meta property="og:image" content="https://github.com/habrimhdz/wdd231/blob/main/finalproject/images/gvlogo.svg"> 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://habrimhdz.github.io/wdd231/chamber/index.html">
-    <script src="scripts/directory.js" defer></script>
+    <meta property="og:url" content="https://habrimhdz.github.io/wdd231/finalproject/index.html">
+    <link rel="icon" href="images/gvlogo.svg" type="image/svg+xml">
+    <script type="module" src="scripts/finalproject.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="images/gvlogo.svg" alt="Logo" width="200" loading="lazy">=
-          <nav class="navbar">
-            <ul class="nav-menu" id="navMenu">
+        <img class="logo" src="images/gvlogo.svg" alt="Logo" width="100" loading="lazy">
+        <nav class="navmenu" id="navmenu">
+            <ul>
                 <li><a href="index.html" id="home">Home</a></li>
-                <li><a href="directory.html" id="Directory">Directory</a></li>
-                <li><a href="join.html" id="join">Join</a></li>
+                <li><a href="schedule.html" id="schedule">Schedule</a></li>
+                <li><a href="catalogue.html" id="catalogue">Catalogue</a></li>
             </ul>
         </nav>
-         <button class="hamburger" id="hamburger">&#9776;</button>
-        <button class="toggleDark" id="toggleDark">&#127769;</button>
+        <button class="hamburger" id="hamburger">&#9776;</button>
     </header>
     <main>
-        <h1>Home</h1>
+        <section class="hero">
+        <h1>Welcome to our Website! Glazing Vision is a brand new company based in Durango with a unique passion for Fashion and Health.</h1>
+        <video src="images/heroVidhq.mp4" width="100%" autoplay loop></video>
+        </section>
+
+        <section class="indexcontent">
+            <div class="info">
+            <h2>About Us</h2>
+            <p>Glazing Vision is a startup company that specializes in selling high-quality sunglasses and blue light glasses. Our mission is to provide our customers with stylish and functional eyewear that protects their eyes from harmful UV rays and blue light emitted by digital devices.</p>
+            <p>We believe that everyone deserves to see the world clearly and comfortably, which is why we offer a wide range of glasses to suit different styles and needs. Whether you're looking for trendy sunglasses for outdoor activities or blue light glasses to reduce eye strain while working on your computer, we have you covered.</p>
+            <p>At Glazing Vision, we are committed to providing excellent customer service and ensuring that our customers are satisfied with their purchases. We source our products from reputable manufacturers and conduct rigorous quality checks to ensure that our customers receive only the best products. Not only that, but we also offer free consultaions!</p>
+            <p>Thank you for choosing Glazing Vision as your go-to source for sunglasses and blue light glasses. We look forward to helping you see the world in a new light!</p>
+            </div>
+
+            <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116616.57513046956!2d-104.63241489999999!3d24.021613700000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869bb7a518bcdf73%3A0xbfdd8ea63a6c4ad4!2sDurango!5e0!3m2!1sen!2smx!4v1760223685280!5m2!1sen!2smx" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
     </main>
+    <footer>
+        <p>Copyright &copy; 2025 Glazing Vision, Angel Habrim Hernandez Garcia</p>
+        <a href="attributions.txt">Attributions</a>
+    </footer>
 </body>
 </html>

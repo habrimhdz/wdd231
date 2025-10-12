@@ -1,0 +1,109 @@
+{
+    "catalogue": [
+        {
+            "name": "Ray-Ban Original Wayfarer (RB2140)",
+            "title": "Classic Sunglasses",
+            "image": "images/raybanwayfarers.avif",
+            "provider": "Ray-Ban Official Store",
+            "description": "Iconic acetate frame with G-15 lenses — classic style and UV protection."
+        },
+        {
+            "name": "Oakley Holbrook",
+            "title": "Performance Sunglasses",
+            "image": "images/holbrook.avif",
+            "provider": "Oakley Official Store",
+            "description": "Timeless design with Oakley clarity and optional polarized/Prizm lenses."
+        },
+        {
+            "name": "Maui Jim Ho'Okipa",
+            "title": "Polarized Sunglasses",
+            "image": "images/hookipa.avif",
+            "provider": "Maui Jim Official Store",
+            "description": "Lightweight rimless polarized sunglasses with MauiPure lens tech for vivid colors."
+        },
+        {
+            "name": "Meta Quest 2 (Quest 2) / Quest 3S reference",
+            "title": "All-in-One VR Headset",
+            "image": "images/metaquest2.avif",
+            "provider": "Meta Quest Official",
+            "description": "Stand-alone VR headset (Meta product line; newer Quest models available)."
+        },
+        {
+            "name": "Meta Quest Pro",
+            "title": "Premium Mixed Reality Headset",
+            "image": "images/metaquestpro.avif",
+            "provider": "Meta Quest Official",
+            "description": "High-end mixed reality headset for pros and creators."
+        },
+        {
+            "name": "Warby Parker — Wilkie",
+            "title": "Optical Frame (Prescription)",
+            "image": "images/wilkie.webp",
+            "provider": "Warby Parker",
+            "description": "Popular rectangular acetate frame offered by Warby Parker in several colors and prescription options."
+        },
+        {
+            "name": "Ray-Ban Clubmaster (RX5154)",
+            "title": "Browline Eyeglasses",
+            "image": "images/raybanclub.avif",
+            "provider": "Ray-Ban Official",
+            "description": "Retro Clubmaster browline frame available as prescription eyeglasses."
+        },
+        {
+            "name": "Oliver Peoples — Standard Optical",
+            "title": "Designer Eyeglasses",
+            "image": "images/oliverp.avif",
+            "provider": "Oliver Peoples Official Store",
+            "description": "Crafted frames known for refined materials and understated luxury."
+        },
+        {
+            "name": "Custom Orders — Local Optical Lab",
+            "title": "Custom Frame & Lens Orders",
+            "image": "images/custom.avif",
+            "provider": "Local Optical Lab / Brand Custom Service",
+            "description": "Custom-made frames and lenses — specify frame, tint, coatings, and prescription."
+        },
+        {
+            "name": "BlueShield Pro",
+            "title": "Blue Light Filtering Glasses",
+            "image": "images/blueshield.avif",
+            "provider": "Optical Retail / Tech Series",
+            "description": "Lenses with blue-light filtering coatings to reduce digital eye strain during screen use."
+        },
+        {
+            "name": "LensCare Cleaning Kit",
+            "title": "Cleaning & Maintenance Kit",
+            "image": "images/cleaning.avif",
+            "provider": "Glazing Vision Accessories",
+            "description": "Microfiber cloths, anti-fog wipes and spray to keep lenses clear and scratch-free."
+        },
+        {
+            "name": "Photochromic Lenses (Transitions)",
+            "title": "Photochromic Lens Upgrade",
+            "image": "images/photochromic.avif",
+            "provider": "Lens Upgrade Services",
+            "description": "Lenses that darken in sunlight and clear indoors, from brands like Transitions."
+        },
+        {
+            "name": "Progressive Focus+",
+            "title": "Progressive Lenses",
+            "image": "images/progressive.avif",
+            "provider": "Optical Center",
+            "description": "Seamless multi-focal lenses for near and far correction without visible lines."
+        },
+        {
+            "name": "FrameFix Express",
+            "title": "Repair & Adjustment Service",
+            "image": "images/frames.avif",
+            "provider": "Glazing Vision Workshop",
+            "description": "Quick frame repairs, hinge replacements, and temple adjustments."
+        },
+        {
+            "name": "SmartTint Electrochromic Shades",
+            "title": "Smart Sunglasses",
+            "image": "images/electronew.jpg",
+            "provider": "Tech Brands / Innovations",
+            "description": "Electrochromic sunglasses that change tint on demand; market availability varies by brand."
+        }
+    ]
+}
