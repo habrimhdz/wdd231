@@ -1,4 +1,4 @@
-/* add local storage functionality, animate catalogue images on hover for larger views, get method for submission forms, and fix footer color contrast issues, (check other pages just in case)   */
+/* center the large screen navmenu properly (or set the logo to the left or right), add local storage functionality, animate catalogue images on hover for larger views, get method for submission forms, and fix footer color contrast issues, (check other pages just in case)   */
 /* Also record the video for the submission and link it in the footer as well*/
 
 :root {
@@ -24,12 +24,15 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: linear-gradient(var(--background2), #02025A, var(--text2));
     padding: 50px 0;
     margin-bottom: 100px;
     border: none;
-    animation: fadeInDown 1s forwards
-    
+    animation: fadeInDown 1s forwards;
 }
 
 header img {
@@ -40,26 +43,18 @@ header img {
 }
 
 header nav ul {
-    padding: 0;
-    margin: 20px 0 0 0;
-     text-align: center;
-     text-decoration: none;
-     animation: fadeInDown 1s forwards
-}
-
-header nav ul li {
     list-style: none;
-    margin: 0 50px;
-    display: inline-block;
+    padding: 0;
 }
 
 header nav ul li a {
     color: var(--text);
     text-decoration: none;
-    font-weight: 300;
+    font-weight: 250;
     font-size: 3em; 
     transition: 0.3s ease-in-out;
     text-shadow: 3px 10px 10px rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
 }
 
 header nav ul li a:hover {
@@ -68,9 +63,8 @@ header nav ul li a:hover {
 }
 
 footer {
-    background: linear-gradient(var(--text2), #02025A, #02025A,  var(--background2));
-    color: var(--text);
-    padding: 20px 0;
+    background: linear-gradient(var(--background2), #02025A, #02025A, var(--background2));
+    padding: 10px 0;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -79,6 +73,22 @@ footer {
     margin-top: 50px;
     font-style: italic;
     font-weight: 300;
+}
+footer p {
+    text-shadow: 1px 10px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 30px;
+    color: var(--text);
+}
+
+footer a {
+    color: var(--text);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer a:hover {
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
 }
 
 h1 {
@@ -115,6 +125,11 @@ h1 {
     z-index: 2;
     backdrop-filter: blur(10px);
     }
+
+.hero h1:hover {
+    font-weight: 300;
+    transition: 0.5s ease-in-out;
+}
 
 video {
     width: 100%;
@@ -203,6 +218,7 @@ form button {
 
 form button:hover {
     background-color: var(--background);
+    transform: scale(1.05);
 }
 
 /* Catalogue Page */
@@ -260,6 +276,24 @@ h3 {
     top: 20px;
     right: 20px;
     cursor: pointer;
+}
+
+#visitMessage {
+    background-color: var(--hg);
+    color: var(--text);
+    border-radius: 5px;
+    font-size: 1.2em;
+    box-shadow: var(--extra) 1px 5px 20px;
+    max-width: 600px;
+    margin: 50px auto;
+    animation: fadeInDown 1s forwards;
+
+}
+
+#visitMessage p {
+    margin: 0;
+    padding: 10px;
+    font-weight: 200;
 }
 
 
@@ -359,7 +393,7 @@ h3 {
     .navmenu {
     display: none;
     flex-direction: column;
-    gap: 50px;
+    gap: 75px;
     text-align: center;
     font-size: 2rem;
     top: 80px;
@@ -395,6 +429,10 @@ h3 {
         font-size: 2.5em;
     }
 
+    header img {
+        margin-right: 75px;
+    }
+
     .hamburger {
         display: none;
     }
@@ -406,4 +444,10 @@ h3 {
     .catalogueCards{
     display: grid;
     grid-template-columns: repeat(2, 1fr);}
+
+    .catalogueCards img:hover {
+        transform: scale(1.05);
+        transition: 0.4s ease-in-out;
+        rotate: 1deg;
+    }
 }
